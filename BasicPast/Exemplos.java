@@ -1,3 +1,5 @@
+import Funcoes.Calculadora;
+
 /************************************************************************************
  * AULA: ProgramaÃ§Ã£o BÃ¡sica Java
  * 
@@ -15,37 +17,7 @@ public class Exemplos {
         System.out.println(str);
     }
 
-    public static int somar(int a, int b){
 
-        return a + b;
-
-        //int r = (a + b);
-        //return r;
-    } 
-
-    public static int subtrair(int a, int b){
-
-        return a - b;
-
-        //int r = (a - b);
-        //return r;
-    } 
-
-    public static int multiplicar(int a, int b){
-
-        return a * b;
-
-        //int r = (a * b);
-        //return r;
-    } 
-
-    public static int dividir(int a, int b){
-
-        return a / b;
-
-        //int r = (a / b);
-        //return r;
-    } 
 
     public static void main(String[] args) {
   
@@ -75,16 +47,16 @@ public class Exemplos {
       //imprimir("--------->>>A + B: " + (a + b));
       //imprimir("--------->>>A + B: " + somar(a + b));
 
-      int retornoSoma = somar(a, b);
+      int retornoSoma = Calculadora.somar(a, b);
       imprimir("A + B: " + retornoSoma);
 
-      int retornoSub = subtrair(a, b);
+      int retornoSub = Calculadora.subtrair(a, b);
       imprimir("A - B: " + retornoSub );
 
-      int retornoMulti = multiplicar(a, b);
+      int retornoMulti = Calculadora.multiplicar(a, b);
       imprimir("A * B: " + retornoMulti);
 
-      int retornoDiv = dividir(a, b);
+      int retornoDiv = Calculadora.dividir(a, b);
       imprimir("A / B: " + retornoDiv);
 
       imprimir("A % B: " + (a % b));
